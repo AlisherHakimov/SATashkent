@@ -1,0 +1,86 @@
+name: satashkent
+description: "O'quv markazi - darslar, musoboqalar, imtihonlar"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+  phosphor_flutter: ^2.1.0
+
+  # State Management
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+
+  # DI
+  injectable: ^2.4.4
+  get_it: ^7.7.0
+
+  # Network
+  dio: ^5.7.0
+  retrofit: ">=4.0.0 <4.9.0"
+
+  # Serialization
+  json_annotation: ^4.9.0
+
+  # Navigation
+  go_router: ^14.6.2
+
+  # Storage
+  shared_preferences: ^2.3.3
+  flutter_secure_storage: ^9.2.2
+
+  # Firebase & Notifications
+  firebase_core: ^3.13.0
+  firebase_messaging: ^15.2.5
+  flutter_local_notifications: ^18.0.1
+
+  # Utils
+  dartz: ^0.10.1
+  connectivity_plus: ^6.1.1
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.13
+  injectable_generator: ^2.6.2
+  retrofit_generator: ">=8.0.0 <9.7.0"
+  json_serializable: ^6.8.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  # ── Android ──────────────────────────────────────────────────────────
+  android: true
+  # Adaptive icon (Android 8.0+): foreground + background
+  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"
+  adaptive_icon_background: "#C42847"
+  # Legacy icon (below Android 8)
+  image_path_android: "assets/icons/app_icon.png"
+  min_sdk_android: 21
+
+  # ── iOS ──────────────────────────────────────────────────────────────
+  ios: true
+  image_path_ios: "assets/icons/app_icon.png"
+  remove_alpha_ios: true
+
+  # ── Web ──────────────────────────────────────────────────────────────
+  web:
+    generate: true
+    image_path: "assets/icons/app_icon.png"
+    background_color: "#C42847"
+    theme_color: "#C42847"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
